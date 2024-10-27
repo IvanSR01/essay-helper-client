@@ -1,0 +1,90 @@
+.wrapper {
+	padding: 20px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.essay {
+	width: 100%;
+	max-width: 1200px; // Увеличиваем ширину контейнера
+	background-color: #ffffff;
+	border-radius: 8px;
+	padding: 30px; // Добавляем отступы
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topic {
+	font-size: clamp(20px, 4vw, 36px); // Адаптивный заголовок
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.works {
+	margin-bottom: 30px;
+}
+
+.work {
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 6px;
+	background-color: #f9f9f9;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+	font-size: clamp(18px, 2.5vw, 28px); // Адаптивный заголовок произведения
+	font-weight: 500;
+	color: #444;
+	margin-bottom: 8px;
+}
+
+.info {
+	font-size: clamp(14px, 1.5vw, 20px); // Адаптивный текст информации
+	color: #666;
+	display: flex;
+	flex-direction: column;
+}
+
+.genres {
+	margin-top: 5px;
+	color: #888;
+}
+
+.type {
+	font-size: clamp(16px, 2vw, 24px); // Адаптивный размер для типа эссе
+	font-weight: 600;
+	color: #555;
+	margin-bottom: 30px;
+	padding: 12px;
+	background-color: #eef;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.text {
+	font-size: clamp(16px, 2vw, 24px); // Адаптивный размер основного текста
+	line-height: 1.7;
+	color: #333;
+
+	// Стили для элементов внутри текста эссе
+	p {
+		margin-bottom: 15px;
+	}
+
+	h2, h3, h4 {
+		margin-top: 20px;
+		font-weight: 500;
+		color: #333;
+		font-size: clamp(20px, 3vw, 30px); // Адаптивные заголовки внутри текста
+	}
+
+	ul, ol {
+		margin-left: 25px;
+		margin-bottom: 15px;
+	}
+
+	li {
+		margin-bottom: 8px;
+	}
+}

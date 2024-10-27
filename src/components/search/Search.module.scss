@@ -1,0 +1,43 @@
+.search {
+	width: 100%;
+	display: flex;
+	padding: 20px 0 0 0;
+	flex-direction: column;
+	gap: 20px;
+	.selects {
+		width: 100%;
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+		overflow: hidden;
+	}
+	.selectContainer {
+		width: 100%;
+		display: flex;
+		gap: 20px;
+		flex-direction: row;
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+	.button {
+		width: 100%;
+		display: flex;
+		font-weight: bold;
+		text-transform: uppercase;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		position: relative;
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 10px 20px;
+		cursor: pointer;
+		* {
+			transition: rotate 0.3s ease;
+		}
+		.rotate {
+			transform: rotate(180deg);
+		}
+	}
+}
